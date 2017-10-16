@@ -62,9 +62,9 @@
             <div class="row margin-top-1rem margin-bottom-1rem">
                 <div class="col-md-3 logo"> <a href="index.html"><img src="app/img/logo.png" alt="Tradeingroup"></a></div>
                 <div class="col-md-3">
-                    <div>
-                        Ежедневно с 9:00 до 21:00
-                        <br> г.Киев, ул.Северо-Сырецкая, 1-3
+                    <div class="adress-text">
+                        <p>Ежедневно с 9:00 до 21:00</p>
+                        <p>г.Киев, ул.Северо-Сырецкая, 1-3</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -96,7 +96,7 @@
                         <li><a href="index.html">Главная</a></li>
                         <li><a style="background-color: rgba(0,0,0,.1)" href="Product.html">Продукция</a></li>
                         <li><a href="About.html">О компании</a></li>
-                        <li><a href="Service.html">Услуги</a></li>
+                        <li><a href="Promotion.html">Акции</a></li>
                         <li><a href="Articles.html">Статьи</a></li>
                         <li><a href="Contacts.html">Контакты</a></li>
                     </ul>
@@ -107,37 +107,81 @@
     <section class="content">
         <div class="container">
             <div class="row">
-                <div class="banner col-xs-12 margin-top-2rem">
-                    <img src="app/img/baner-big.png" alt="">
-                </div>
-            </div>
-            <div class="row margin-top-3rem">
-                <div class="product-list text-center">
-                    <h3>Хотите купить стрейч пленку? Наша компания производит следующие виды продуктов:</h3>
-                    <div class="product-slider">
-                        <div class="product-slider-img"><img src="app/img/product1.jpg" alt=""></div>
-                        <div class="product-slider-img"><img src="app/img/product2.jpg" alt=""></div>
-                        <div class="product-slider-img"><img src="app/img/product3.jpg" alt=""></div>
-                        <div class="product-slider-img"><img src="app/img/product4.png" alt=""></div>
-                        <div class="product-slider-img"><img src="app/img/product5.jpeg" alt=""></div>
-                        <div class="product-slider-img"><img src="app/img/product6.jpg" alt=""></div>
-                    </div>
-                    <div class="product-slider-nav">
-                        <div class="product-slider-nav-img"><img src="app/img/product1.jpg" alt=""></div>
-                        <div class="product-slider-nav-img"><img src="app/img/product2.jpg" alt=""></div>
-                        <div class="product-slider-nav-img"><img src="app/img/product3.jpg" alt=""></div>
-                        <div class="product-slider-nav-img"><img src="app/img/product4.png" alt=""></div>
-                        <div class="product-slider-nav-img"><img src="app/img/product5.jpeg" alt=""></div>
-                        <div class="product-slider-nav-img"><img src="app/img/product6.jpg" alt=""></div>
+                <div class="product-index text-center" id="product">
+                    <h2 class="section-title">Наша продукция</h2>
+                    <div class="">
+                        Миссия нашей компании заключается в создании современных и
+                        <br> красивых решений упаковки складской тары.
                     </div>
                 </div>
-                <div class="product-button margin-top-2rem">
-                    <button>Заказать товар сейчас</button>
+                <div class="product-boxes clearfix">
+                    <div class="col-xs-4 product-box margin-top-1rem">
+                        <div class="product-img" style="background: url(app/img/product1.jpg); background-size: cover; width: auto; height: 225px;"></div>
+                        <div class="product-text">
+                            <h3>Стейч пленка для <br> ручной намотки</h3>
+                        </div>
+                        <a href="Product1.html" class="product-buy">
+                            <span class="price">от 47 грн/шт <span class="fa"> 
+                            &#8594 </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-xs-4 product-box margin-top-1rem">
+                        <div class="product-img" style="background: url(app/img/product2.jpg); background-size: cover; width: auto; height: 225px;"></div>
+                        <div class="product-text">
+                            <h3>Черная cтейч пленка для <br> ручной намотки</h3>
+                        </div>
+                        <a href="Product2.html" class="product-buy">
+                            <span class="price">от 49 грн/шт <span class="fa"> 
+                            &#8594 </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-xs-4 product-box margin-top-1rem">
+                        <div class="product-img" style="background: url(app/img/product3.jpg); background-size: cover; width: auto; height: 225px;"></div>
+                        <div class="product-text">
+                            <h3>Стейч пленка <br> машинного формата</h3>
+                        </div>
+                        <a href="Product3.html" class="product-buy">
+                            <span class="price">от 48 грн/кг<span class="fa"> &#8594 </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-xs-4 product-box">
+                        <div class="product-img" style="background: url(app/img/product4.png); background-size: cover; width: auto; height: 225px;"></div>
+                        <div class="product-text">
+                            <h3>Стрейч в джамбо <br> рулонах</h3>
+                        </div>
+                        <a href="Product4.html" class="product-buy">
+                           <span class="price">от 47 грн/кг<span class="fa"> &#8594 </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-xs-4 product-box">
+                        <div class="product-img" style="background: url(app/img/product5.jpeg); background-size: cover; width: auto; height: 225px;"></div>
+                        <div class="product-text">
+                            <h3>Скотч лента <br> прозрачная</h3>
+                        </div>
+                        <a href="Product7.html" class="product-buy">
+                            <span class="price">от 4 грн/шт<span class="fa"> &#8594 </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-xs-4 product-box">
+                        <div class="product-img" style="background: url(app/img/product6.jpg); background-size: cover; width: auto; height: 225px;"></div>
+                        <div class="product-text">
+                            <h3>Скотч лента с <br> логотипом</h3>
+                        </div>
+                        <a href="Product8.html" class="product-buy">
+                            <span class="price">от 6 грн/кг<span class="fa"> &#8594 </span>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="row margin-top-3rem">
                 <div class="product-info">
-                    <div class="margin-top-1rem text-center">
+                    <div class="margin-top-1rem">
                         <p><b>Стрейч пленка может растягиваться до 400% и более в длину,</b> при этом не образуя разрывов. На уровень растяжения влияет количество престрейча. Упаковывая товары, стрейч пленку растягиваютдо предельного растяжения. Приобретая исходный размер, пленка надежно фиксирует и гарантирует герметичность. стрейч пленка (Киев) незаменима практически во всех сферах производства, хранении предметов, транспортировке товаров и ремонтах.</p>
                         <p> Скотч (клейкая лента) имеет клеевое покрытие, обеспечивающее прилипание пленки к поверхностям. Имеет широкое использование на производстве и в домашних условиях. Продается в рулонах с наружной неклеевой стороной, а иногда – с липучими двумя сторонами для склеивания вместе нескольких предметов.</p>
                         <p>С увеличением популярности Интернет-продаж и пересылки товаров на большие расстояния, стрейч пленка является все более популярным упаковочным материалом. Будучи изготовленной из линейного полиэтилена низкой плотности, стрейтч пленка прочно закрепляет отдельные предметы в упаковке.</p>
@@ -146,8 +190,8 @@
                     <div class="text-center">
                         <img src="app/img/product.jpg" alt="">
                     </div>
-                    <div class="text-center margin-bottom-2rem">
-                        <h3>Преимущества стрейч пленки</h3>
+                    <div class="margin-bottom-2rem">
+                        <h3 class="text-center">Преимущества стрейч пленки</h3>
                         <p>Вы уже убедились, что не найти более прочного материала, чем стрейч пленка. Купить ее означает обеспечить себя: - Прочной и надежной фиксацией товаров; - Контролем состояния товара, благодаря прозрачности пленки; - Стойкостью к проколам; - Экономный и рационально используемый материал; - Герметичности упаковки; - Обеспечением чистоты товаров.</p>
                         <p><b>Стрейч пленка бывает ручной и машинной намотки. </b>Первая используется для ручной упаковки товаров в небольших объемах без дополнительного оборудования. Рулоны весят в среднем 1-3 кг нетто с толщиной 10-25 мкм и шириной 100, 250 и 500 мм.</p>
                         <p> Ее используют не только в рабочих целях, но и при переездах, для упаковки продуктов питания, для хранения личных вещей, и в других целях. Купить стреч пленку легко и просто.</p>
@@ -158,37 +202,73 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="contact-client margin-top-3rem text-center">
-                    <h2>Компания “Трейд Интер Групп” — ваш надежный производитель стрейча и скотча.</h2>
-                    <div class="client-btn">
-                        <button>Стать клиентом компании</button>
-                    </div>
-                </div>
+        </div>
+        <div class="row request">
+            <div class="container request-form margin-top-3rem margin-bottom-3rem">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td>Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы.</td>
+                            <th>
+                                <a href="#openModal">
+                                    <i class="fa fa-comment-o "></i>
+                                    Оставить заявку
+                                </a>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
+        <div id="openModal" class="modalDialog">
+            <form>
+                <div class="group">
+                    <input type="text">
+                    <label>Ваше имя</label>
+                </div>
+                <div class="group">
+                    <input type="email">
+                    <label>E-mail</label>
+                </div>
+                <div class="group">
+                    <input type="email">
+                    <label>Номер телефона</label>
+                </div>
+                <div class="modal-buttons">
+                    <button type="button" class="button buttonBlue">
+                        Отправить
+                    </button>
+                    <button type="button" class="button buttonRed">
+                        <a href="#close"> Закрыть</a>
+                    </button>
+                </div>
+            </form>
+        </div>
     </section>
-<footer class="footer">
+    <footer class="footer">
         <div class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
                         <div class="col-xs-12"><a href="index.html"><img src="app/img/logo.png" alt="Tradeingroup"></a></div>
-                        <div class="col-xs-12 margin-top-1rem">2017© ООО "Трейд Интер Групп" - Работаем для Вас</div>
+                        <div class="col-xs-12 under-logo-text">2017© ООО "Трейд Интер Групп" - Работаем для Вас</div>
+                        <div class="col-xs-12 margin-top-1rem">
+                            Made in <a href="http://www.inspirit.com.ua/">Inspirit</a>
+                        </div>
                     </div>
                     <div class="col-md-5">
                         <div class="menu-bottom">
                             <ul class="text-center">
-                                <li><a href="Product.html" style="color: rgba(0,0,0,.7); text-decoration: none;">Продукция</a></li>
+                                <li><a  style="color: grey" href="Product.html">Продукция</a></li>
                                 <li><a href="About.html">О компании</a></li>
-                                <li><a href="Service.html">Услуги</a></li>
+                                <li><a href="Promotion.html">Акции</a></li>
                                 <li><a href="Articles.html">Статьи</a></li>
                                 <li><a href="Contacts.html">Контакты</a></li>
                             </ul>
                         </div>
-                        <div class="contacts-footer margin-top-2rem col-xs-11 col-xs-offset-1">
+                        <div class="contacts-footer margin-top-1rem col-xs-11 col-xs-offset-1">
                             <div class="phone-numbers">(044) 200-38-48 / (067) 536-92-70</div>
-                            <div class="call-back-footer margin-top-1rem">
+                            <div class="call-back-footer">
                                 <a href="#">
                         <i class="fa fa-phone" aria-hidden="true"></i><span>Заказать звонок</span>
                     </a>

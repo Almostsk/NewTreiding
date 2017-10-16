@@ -57,14 +57,14 @@
 </head>
 
 <body class="loaded">
- <header class="header">
-         <div class="container">
+    <header class="header">
+        <div class="container">
             <div class="row margin-top-1rem margin-bottom-1rem">
                 <div class="col-md-3 logo"> <a href="index.html"><img src="app/img/logo.png" alt="Tradeingroup"></a></div>
                 <div class="col-md-3">
-                    <div>
-                        Ежедневно с 9:00 до 21:00
-                        <br> г.Киев, ул.Северо-Сырецкая, 1-3
+                    <div class="adress-text">
+                        <p>Ежедневно с 9:00 до 21:00</p>
+                        <p>г.Киев, ул.Северо-Сырецкая, 1-3</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -95,8 +95,8 @@
                     <ul>
                         <li><a href="index.html">Главная</a></li>
                         <li><a href="Product.html">Продукция</a></li>
-                        <li><a style="background-color: rgba(0,0,0,.1)"  href="About.html">О компании</a></li>
-                        <li><a href="Service.html">Услуги</a></li>
+                        <li><a style="background-color: rgba(0,0,0,.1)" href="About.html">О компании</a></li>
+                        <li><a href="Promotion.html">Акции</a></li>
                         <li><a href="Articles.html">Статьи</a></li>
                         <li><a href="Contacts.html">Контакты</a></li>
                     </ul>
@@ -107,8 +107,26 @@
     <section class="content">
         <div class="container">
             <div class="row">
-            <h2 class="section-title text-center">О нашей компании</h2>
-                <div class="about-us-main text-center clearfix">
+                <div class="col-sm-4">
+                <div class="catalog-side-menu">
+                      <h3 class="section-title">Каталог товаров:</h3> 
+                      <div class="margin-top-3rem">
+                          <ul class="side-menu">
+                              <li> <a href="Product1.html"> Стрейч пленка для ручной намотки </a> </li>
+                              <li> <a href="Product2.html"> Черный стрейч для ручной намотки </a> </li>
+                              <li> <a href="Product3.html"> Стрейч пленка 250мм для намотки </a> </li>
+                              <li> <a href="Product4.html"> Стрейч пленка для машинного формата </a> </li>
+                              <li> <a href="Product5.html"> Стрейч в джамбо рулонах </a> </li>
+                              <li> <a href="Product6.html"> Цветной стрейч в джамбо рулонах </a> </li>
+                              <li> <a href="Product7.html"> Скотч лента прозрачная </a> </li>
+                              <li> <a href="Product8.html"> Скотч лента с логотипом </a> </li>
+                          </ul>
+                      </div> 
+                </div>
+                </div>
+                <div class="col-sm-8">
+                <div class="about-us-main">
+                    <h2 class="section-title">О нашей компании</h2>
                     <img src="app/img/about.jpg" alt="">
                     <div class="about-text">
                         <p><b> Трейд Интер Групп </b>– это украинская производственная компания. Основными направлениями деятельности нашей компании являются изготовление и производство упаковочных материалов: стрейч-пленки и клейкой ленты.</p>
@@ -121,8 +139,8 @@
                         <p>Сохраняйте презентабельный вид ваших товаров и обеспечьте их надежное хранение.</p>
                     </div>
                 </div>
-                <div class="sertificate text-center margin-top-3rem">
-                    <h3>Сертификат</h3>
+                <div class="sertificate margin-top-3rem">
+                    <h3 class="text-center">Сертификат</h3>
                     <div class="sertificate-text margin-top-1rem">
                         <p>Сертификат на производство – это документ, подтверждающий соответствие технологических процессов и условий производства нормативным документам и стандартам.</p>
                         <p>Сертификация производства осуществляется для совершенствования качества работы и увеличения прибыли. Эту процедуру проводят экспертные организации. Кроме определения качества товаров, эксперты сертифицируют и условия функционирования предприятия. Вы можете сами осуществить такую процедуру, или стать составляющей частью экспертизы.</p>
@@ -132,38 +150,75 @@
                         <a class="text-center" data-fancybox="gallery" href="app/img/sert2.jpg"><img src="app/img/sert2.jpg"></a>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="contact-client margin-top-3rem text-center">
-                    <h2>Компания “Трейд Интер Групп” — ваш надежный производитель стрейча и скотча.</h2>
-                    <div class="client-btn">
-                        <button>Стать клиентом компании</button>
-                    </div>
                 </div>
             </div>
         </div>
+<div class="row request">
+            <div class="container request-form margin-top-3rem margin-bottom-3rem">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td>Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы.</td>
+                            <th>
+                                <a href="#openModal">
+                                    <i class="fa fa-comment-o "></i>
+                                    Оставить заявку
+                                </a>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="openModal" class="modalDialog">
+            <form>
+                <div class="group">
+                    <input type="text">
+                    <label>Ваше имя</label>
+                </div>
+                <div class="group">
+                    <input type="email">
+                    <label>E-mail</label>
+                </div>
+                <div class="group">
+                    <input type="email">
+                    <label>Номер телефона</label>
+                </div>
+                <div class="modal-buttons">
+                    <button type="button" class="button buttonBlue">
+                        Отправить
+                    </button>
+                    <button type="button" class="button buttonRed">
+                        <a href="#close"> Закрыть</a>
+                    </button>
+                </div>
+            </form>
+        </div>
     </section>
-<footer class="footer">
+    <footer class="footer">
         <div class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
                         <div class="col-xs-12"><a href="index.html"><img src="app/img/logo.png" alt="Tradeingroup"></a></div>
-                        <div class="col-xs-12 margin-top-1rem">2017© ООО "Трейд Интер Групп" - Работаем для Вас</div>
+                        <div class="col-xs-12 under-logo-text">2017© ООО "Трейд Интер Групп" - Работаем для Вас</div>
+                        <div class="col-xs-12 margin-top-1rem">
+                            Made in <a href="http://www.inspirit.com.ua/">Inspirit</a>
+                        </div>
                     </div>
                     <div class="col-md-5">
                         <div class="menu-bottom">
                             <ul class="text-center">
                                 <li><a href="Product.html">Продукция</a></li>
-                                <li><a href="About.html" style="color: rgba(0,0,0,.7); text-decoration: none;">О компании</a></li>
-                                <li><a href="Service.html">Услуги</a></li>
+                                <li><a style="color: grey"  href="About.html">О компании</a></li>
+                                <li><a href="Promotion.html">Акции</a></li>
                                 <li><a href="Articles.html">Статьи</a></li>
                                 <li><a href="Contacts.html">Контакты</a></li>
                             </ul>
                         </div>
-                        <div class="contacts-footer margin-top-2rem col-xs-11 col-xs-offset-1">
+                        <div class="contacts-footer margin-top-1rem col-xs-11 col-xs-offset-1">
                             <div class="phone-numbers">(044) 200-38-48 / (067) 536-92-70</div>
-                            <div class="call-back-footer margin-top-1rem">
+                            <div class="call-back-footer">
                                 <a href="#">
                         <i class="fa fa-phone" aria-hidden="true"></i><span>Заказать звонок</span>
                     </a>

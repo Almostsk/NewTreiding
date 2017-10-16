@@ -16,8 +16,31 @@
 			width: 50%	
 .about-us-main
 	img
-		float: left
-		margin-right: 2rem
 		margin-bottom: 2rem
 		box-shadow: 4px 4px 10px rgba(0,0,0,0.3)
 		border-radius: 2px					
+.side-menu
+	li
+		height: auto
+		font-size: 1.2rem
+		line-height: 2rem
+		position: relative
+		margin-left: 25px
+		+display-flex
+		align-items: center
+		a:hover
+			color: $blue
+			+transition($default-transition)
+		&.active:before
+			background: url(../img/check2.png) no-repeat 0 0	
+		&:before
+			background: url(../img/check.png) no-repeat 0 0
+			background-size: contain
+			content: ""
+			display: block
+			height: 1.4rem
+			left: -25px
+			overflow: hidden
+			position: absolute
+			top: 5px
+			width: 20px		

@@ -20,7 +20,8 @@ body,
 html
 	margin: 0
 	padding: 0
-	+font($baseFont, 16px, 1.15rem)
+	+font($baseFont, 15px, 1.5rem)
+	letter-spacing: .8px
 	@extend .font
 	display: flex
 	flex-direction: column
@@ -53,9 +54,8 @@ html
 		font-size: 20px
 
 .title
-	color: $title-color
-	letter-spacing: $letter-spacing
-	margin: 0
+	margin-top: 3rem
+	margin-bottom: 2rem
 
 h1,.h1
 	+font($baseFont, 28px, 1.75rem)

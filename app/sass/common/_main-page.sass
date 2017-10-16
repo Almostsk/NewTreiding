@@ -2,6 +2,8 @@ html, body
 	font-size: 15px
 	font-family: $baseFont
 	overflow-x: hidden
+	line-height: 1.5rem
+	letter-spacing: .8px
 	letter-spacing: .4px
 .go-top
 	position: fixed
@@ -13,31 +15,127 @@ html, body
 	height: 55px
 	display: none
 	background-image: url(../img/go-top.png)
+.slider-box
+	padding-left: 0
+	padding-right: 0
+	margin-top: 60px				
+.slider
+	.slider-text
+		font-size: 1.5rem
+		line-height: 2rem
+		margin-bottom: 2rem
+	.slider-box1
+		background-image: url(../img/slide1.jpg)
+		background-size: cover
+		background-repeat: no-repeat
+	.slider-box2
+		background-image: url(../img/slide2.jpg)
+		background-size: cover
+		background-repeat: no-repeat
+	.slider-box3	
+		background-image: url(../img/slide3.jpg)
+		background-size: cover
+		background-repeat: no-repeat
+	.slide
+		position: relative
+		height: 500px
+		.slider-1, .slider-2, .slider-3
+			margin: 0 auto
+			width: 100%
+			height: 100%
+			+display-flex
+			justify-content: center
+			align-items: center
+			.slider-content
+				color: #fff
+				width: 60%
+				height: auto
+				+display-flex
+				justify-content: center
+				align-items: center
+				.slide-title
+					margin-top: 0
+					text-transform: uppercase
+					font-size: 2rem
+					letter-spacing: 2px
+					font-weight: 600
+					color: #fff
+					width: 100%
+					text-align: center
+				.slide-button		
+					height: 50px
+					width: 25%
+					margin-left: 10px
+					margin-right: 10px
+					font-family: $baseFontMedium
+					font-size: 1.2rem
+					border-radius: 30px
+					+display-flex
+					align-items: center
+					justify-content: center
+					background-color: #fff
+					color: $blue
+					&:hover
+						color: #fff
+						background-color: $blue
+						+transition($default-transition)
+						border: 1px solid $blue
+				.slide-button-more
+					background-color: transparent
+					border: 1px solid #fff
+					color: #fff		
 
+	.fa-long-arrow-left, .fa-long-arrow-right
+		color: $blue
+		background-color: #fff
+		cursor: pointer
+		font-size: 30px
+		position: absolute
+		z-index: 1000
+		top: 45%
+		padding: 5px
+		border-radius: 50%
+		&:hover
+			color: #fff
+			background-color: $blue
+			+transition($default-transition)
+	.fa-long-arrow-left
+		left: 90px
+	.fa-long-arrow-right
+		right: 90px
+	.slider-1
+		z-index: 1000
+		position: absolute
+		width: 100%
+		height: 100%		
 .content
 	height: auto
 	background-color: $grey
 .section-title
 	font-family: $baseFontBold
 	font-size: 2rem
-	margin-top: 3rem
-	margin-bottom: 3rem	
+	// margin-top: 3rem
+	// margin-bottom: 3rem	
 	
 .advantages-container
 	border-bottom: 1px solid #e8e8e8	
 .advan-box
 	border-left: 1px solid #e8e8e8
-	height: 250px
-	margin-top: 3rem
+	height: auto
+	padding-top: 3rem
+	padding-bottom: 3rem
 	img
 		border-radius: 20%
 .product-boxes
-	margin-top: 3rem	
+	margin-top: 3rem
+	div:nth-child(3), div:nth-child(6)
+		border-right: 1px dotted $lighterGrey 	
 .product-box
 	padding: 0
 	border: none
 	height: 400px
 	position: relative
+	border-left: 1px dotted $lighterGrey
 	&:hover
 		cursor: pointer
 		+transition($default-transition)
@@ -104,11 +202,15 @@ html, body
 	font-weight: 600
 	.fa
 		margin-left: 15px
+		font-size: 1.5rem
 .advantages-section
 	padding-bottom: 3rem
 	margin-top: 3rem
 	color: $white
 	background: url(../img/advantages-background-blue.jpg)
+	.container
+		padding-left: 0
+		padding-right: 0
 	img
 		width: 100%
 		height: 200px
@@ -132,6 +234,9 @@ html, body
 
 .articles-container
 	background-color: $lighterGrey
+	.container
+		padding-left: -5px
+		padding-right: -5px
 .articles-info
 	color: #111
 	margin-bottom: 3rem
@@ -143,21 +248,8 @@ html, body
 		height: auto
 		width: auto
 		background-color: #fff
-		margin-left: 15px
-		// display: table-cell
-		// vertical-align: middle
-		// a
-		// 	height: 100%
-		// 	+display-flex
-		// 	align-items: center
-		// 	justify-content: center
-		// 	img
-		// 		width: auto	
-		// 		height: 70%
-		// 		+filter
-		// 		&:hover
-		// 			filter: none
-		// 			+transition($default-transition)
+		margin-left: 7.5px
+		margin-right: 7.5px
 	.fa-long-arrow-left, .fa-long-arrow-right
 		color: #111
 		cursor: pointer
@@ -368,9 +460,9 @@ html, body
 	bottom: 0
 	left: 0
 	background-color: rgba(0,0,0, .7)
-	z-index: 1000
 	transition: opacity .4s ease-in
 	display: none
+	z-index: 9999
 	pointer-events: none
 	+transition($default-transition)
 	&:target
@@ -439,15 +531,13 @@ html, body
 		.buttonBlue
 			background: #4a89dc
 			text-shadow: 1px 1px 0 rgba(39, 110, 204, .5)
-			border-bottom: 2px solid #3160b6	
+			border-bottom: 2px solid #4a89dc	
 			&:hover
 				background: #357bd8
 		.buttonRed
-			background: #e20d0d
+			background: #3e3e3e
 			text-shadow: 1px 1px 0 rgba(39, 110, 204, .5)
-			border-bottom: 2px solid #a50606	
-			&:hover
-				background: #e80909	
+			border-bottom: 2px solid #3e3e3e	
 			a
 				color: #fff		
 

@@ -1,12 +1,28 @@
-.spoiler-title
-	font-family: $baseFontMedium
-	font-size: 1.1rem
-	font-weight: 600
-	cursor: pointer
-	color: $title-color
-	border-bottom: 1px solid $lighterGrey
-	padding: 10px
-.spoiler-body
-	font-family: $baseFont
-.articles-title
-	margin-left: 10px	
+// .spoiler-title
+// 	font-family: $baseFontMedium
+// 	font-size: 1.1rem
+// 	font-weight: 600
+// 	cursor: pointer
+// 	color: $title-color
+// 	border-bottom: 1px solid $lighterGrey
+// 	padding: 10px
+// .spoiler-body
+// 	font-family: $baseFont
+// .articles-title
+// 	margin-left: 10px	
+.article-page-box
+	height: 400px
+	position: relative
+	margin-bottom: 2rem
+	&:hover .article-page-img
+		filter: none
+
+.article-page-img
+	width: 100%
+	height: 200px
+	background-repeat: no-repeat
+	background-size: cover
+	+filter
+.article-page-text
+	margin-top: 1rem
+

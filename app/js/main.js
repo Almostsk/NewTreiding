@@ -54,7 +54,7 @@ $('.single-item').slick();
         $('.slider').slick({
             slidesToShow: 1,
             arrows: true,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 3000,
             prevArrow: '<i class="fa fa-long-arrow-left" aria-hidden="true"></i>',
             nextArrow: '<i class="fa fa-long-arrow-right" aria-hidden="true"></i>',
@@ -76,7 +76,7 @@ $('.single-item').slick();
             infinite: true,
             slidesToShow: 4,
             slidesToScroll: 1,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 3000,
             arrows: true,
             prevArrow: '<i class="fa fa-long-arrow-left" aria-hidden="true"></i>',
@@ -98,3 +98,4 @@ $('.single-item').slick();
             $menu.css('top', topPosition);
         });
     });
+    // $('.modalDialog').click().fancybox();
