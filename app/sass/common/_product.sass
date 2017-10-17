@@ -62,3 +62,17 @@
 		font-family: $baseFontBold
 		width: 90%	
 		height: 50px	
+.breadcrumb-container
+	border-bottom: 1px solid $grey
+	width: 100%
+.breadcrumb
+	+display-flex
+	justify-content: flex-start
+	padding-left: 0
+.breadcrumb-item
+	margin-right: 5px	
+.breadcrumb-text
+	&:hover
+		color: $blue
+.breadcrumb-text-active
+	color: $darkerGrey			

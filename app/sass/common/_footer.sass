@@ -11,8 +11,9 @@
 			color: $blue
 			+transition($ease-transition)
 	.under-logo-text
-		font-size: 1rem
-		line-height: 1.2rem		
+		margin-top: 1rem
+		font-size: .8rem
+		line-height: 1rem		
 	.row
 		padding-top: 1rem
 		padding-bottom: 1rem
@@ -34,6 +35,7 @@
 	.contacts-footer
 		.phone-numbers
 			width: auto
+			margin-top: 1rem
 			font-family: $baseFontBold
 			font-weight: 700
 			font-size: 1.5rem
@@ -64,4 +66,8 @@
 			color: $blue
 			background-color: #fff
 			+transition($default-transition)
-	
+a[href="http://www.inspirit.com.ua/"]
+	color: $grey
+	&:hover
+		color: $blue
+		+transition($default-transition)
