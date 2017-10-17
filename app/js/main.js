@@ -98,4 +98,4 @@ $('.single-item').slick();
             $menu.css('top', topPosition);
         });
     });
-    // $('.modalDialog').click().fancybox();
+    // модальне
