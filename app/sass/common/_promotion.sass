@@ -4,6 +4,10 @@
 	background: url(../img/product.jpg) no-repeat
 	background-size: cover
 	position: relative
+	&:hover .promo-price
+		+transition($default-transition)
+		background-color: #ed2f2f
+		color: #fff
 .promo-price
 	height: 70px
 	width: 70px
@@ -31,3 +35,34 @@
 	.promo-text-info
 		letter-spacing: .1rem
 		font-size: 1.1rem	
+.promo-item-container
+	padding-right: 100px
+	margin-top: 3rem
+	position: relative
+.promo-item-image
+	width: 40%
+	height: auto
+	float: left
+	img
+		width: 100%	
+.promo-item-text
+	p
+		margin-bottom: 1rem		
+.promo-item-title
+	font-family: $baseFontBold
+	margin-top: 1rem
+	margin-bottom: 1rem		
+.promo-item-price
+	height: 90px
+	width: 90px
+	border-radius: 50%
+	background-color: $blue	
+	+display-flex
+	justify-content: center
+	align-items: center
+	position: absolute
+	top: 10px
+	right: 10px
+	font-size: 1.3rem
+	color: $base-active-color
+	font-weight: 600			

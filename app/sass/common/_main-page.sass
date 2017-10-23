@@ -4,7 +4,6 @@ html, body
 	overflow-x: hidden
 	line-height: 1.5rem
 	letter-spacing: .8px
-	letter-spacing: .4px
 .go-top
 	position: fixed
 	bottom: 25px
@@ -116,12 +115,13 @@ html, body
 	font-size: 2rem
 	// margin-top: 3rem
 	// margin-bottom: 3rem	
-	
+.advantages
+	height: 336px	
 .advantages-container
 	border-bottom: 1px solid #e8e8e8	
 .advan-box
 	border-left: 1px solid #e8e8e8
-	height: auto
+	height: 100%
 	padding-top: 3rem
 	padding-bottom: 3rem
 	img
@@ -129,13 +129,17 @@ html, body
 .product-boxes
 	margin-top: 3rem
 	div:nth-child(3), div:nth-child(6)
-		border-right: 1px dotted $lighterGrey 	
+		border-right: 1px solid #e3e3e3
+	div:nth-child(4), div:nth-child(5), div:nth-child(6), 	
+		border-bottom: 1px solid #e3e3e3
 .product-box
 	padding: 0
 	border: none
 	height: 400px
 	position: relative
-	border-left: 1px dotted $lighterGrey
+	border-left: 1px solid #e3e3e3
+	border-top: 1px solid #e3e3e3
+		
 	&:hover
 		cursor: pointer
 		+transition($default-transition)
@@ -234,6 +238,7 @@ html, body
 
 .articles-container
 	background-color: $lighterGrey
+	padding-bottom: 1rem
 	.container
 		padding-left: -5px
 		padding-right: -5px
@@ -244,6 +249,10 @@ html, body
 	.section-title
 		color: #111
 .articles-slider
+	.slick-dots
+		bottom: -30px
+	.fa-long-arrow-right, .fa-long-arrow-left
+		bottom: -40px !important	
 	.slider-article
 		height: auto
 		width: auto
@@ -400,7 +409,7 @@ html, body
 		font-size: 30px
 		position: absolute
 		z-index: 1000
-		bottom: -1rem
+		bottom: -30px
 		padding: 5px
 		border-radius: 50%
 		&:hover

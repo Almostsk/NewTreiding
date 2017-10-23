@@ -62,6 +62,11 @@
 		font-family: $baseFontBold
 		width: 90%	
 		height: 50px	
+.spoiler-title
+	&:hover
+		color: #3e3e3e
+		cursor: pointer
+				
 .breadcrumb-container
 	border-bottom: 1px solid $grey
 	width: 100%
@@ -69,10 +74,16 @@
 	+display-flex
 	justify-content: flex-start
 	padding-left: 0
+	margin-top: 1.5rem
+	margin-bottom: 1.5rem
+	i
+		margin-right: 10px
 .breadcrumb-item
 	margin-right: 5px	
 .breadcrumb-text
 	&:hover
 		color: $blue
 .breadcrumb-text-active
-	color: $darkerGrey			
+	color: $darkerGrey	
+.breadcrumb-link
+	margin-right: 10px			
